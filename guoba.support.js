@@ -136,6 +136,24 @@ export function supportGuoba() {
         componentProps: {
         placeholder: '请输入关键词，多个用逗号分隔',
       },
+    },{
+        field: 'config.qjbqglgjc',
+        label: '全局表情包过滤关键词',
+        bottomHelpMessage: '逗号分割关键词，所有群都会过滤这些关键词',
+        component: 'Input',
+        required: false,
+        componentProps: {
+        placeholder: '请输入关键词，多个用逗号分隔',
+      },
+    },{
+        field: 'config.bqglbmd',
+        label: '表情包过滤白名单',
+        bottomHelpMessage: '逗号分割群号，白名单不受任何限制',
+        component: 'Input',
+        required: false,
+        componentProps: {
+        placeholder: '请输入群号，多个用逗号分隔',
+      },
     }],
 
       getConfigData () {
