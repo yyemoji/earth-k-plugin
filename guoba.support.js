@@ -118,6 +118,24 @@ export function supportGuoba() {
         componentProps: {
         placeholder: '请输入cookie',
       },
+    },{
+        field: 'config.bqgllb',
+        label: '表情包过滤名单',
+        bottomHelpMessage: '逗号分割群号，非过滤名单的随意照常',
+        component: 'Input',
+        required: false,
+        componentProps: {
+        placeholder: '请输入群号，多个用逗号分隔',
+      },
+    },{
+        field: 'config.bqglgjc',
+        label: '表情包过滤关键词',
+        bottomHelpMessage: '逗号分割关键词，过滤名单的群会过滤这些关键词',
+        component: 'Input',
+        required: false,
+        componentProps: {
+        placeholder: '请输入关键词，多个用逗号分隔',
+      },
     }],
 
       getConfigData () {
