@@ -148,11 +148,11 @@ export function supportGuoba() {
     },{
         field: 'config.bqglbmd',
         label: '表情包过滤白名单',
-        bottomHelpMessage: '逗号分割群号，白名单不受任何限制',
+        bottomHelpMessage: '逗号分隔群号或用户ID，白名单不受任何限制',
         component: 'Input',
         required: false,
         componentProps: {
-        placeholder: '请输入群号，多个用逗号分隔',
+        placeholder: '请输入群号或用户ID，多个用逗号分隔',
       },
     }],
 
